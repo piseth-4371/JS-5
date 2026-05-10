@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Code Genderate</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../input.css">
+</head>
+<body class="bg-gray-800 flex items-center justify-center h-screen">
+    <div class="bg-white w-auto h-auto rounded-lg px-8 pt-8 pb-12 flex flex-col">
+        <h1 class="text-2xl font-bold">Enter your text or URL</h1>
+        <input id="textBox" class="border border-gray-700 rounded-lg w-md h-13 my-5 px-5" type=" text" placeholder="Text or URL">
+        <div id="imgBox" class="hidden mb-5 mx-auto ">
+            <img id="qrImg" src="" alt="">
+        </div>
+        <button onclick="generateQr()" class="bg-blue-700 w-56 h-13 mx-auto mb-5 rounded-xl text-white text-lg drop-shadow-md  drop-shadow-black/25 cursor-pointer">Generate OR Code</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
