@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../input.css">
+</head>
+<body class="bg-pink-100 relative">
+    <div class=" m-20">
+        <button onclick="showToast()" class="btn">Success</button>
+        <button onclick="showToast()" class="btn">Error</button>
+        <button onclick="showToast()" class="btn">Invalid</button>
+    </div>
+    <div class="toastBox absolute bottom-10 right-10 flex items-end flex-col overflow-hidden "></div>
+    <script src="script.js"></script>
+</body>
+</html>

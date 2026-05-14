@@ -23,3 +23,9 @@
         transform: translateX(0);
     }
 }
+
+@layer components {
+    .btn {
+        @apply bg-gray-700 w-30 h-10 mx-1 text-white;
+    }
+}
