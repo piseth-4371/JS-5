@@ -23,6 +23,7 @@
         transform: translateX(0);
     }
 }
+
 @layer components {
     .btn {
         @apply bg-gray-700 w-30 h-10 mx-1 text-white;
@@ -50,5 +51,23 @@
 @keyframes anim {
     100%{
         width: 0;
+    }
+}
+
+/* Music player */
+@layer components{
+    #progress::-webkit-slider-thumb{
+        @apply appearance-none rounded-full;
+        background: #f53192;
+        width: 30px;
+        height: 30px;
+        border: 8px solid #fff;
+        box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+    }
+    .icon {
+        @apply w-16 h-16 m-5 bg-white inline-flex items-center justify-center rounded-full text-[#f53192] shadow-[0_10px_20px_rgba(255,26,26,0.22)] cursor-pointer
+    }
+    .play:nth-child(2){
+        @apply scale-[1.2] bg-[#f53192] text-white;
     }
 }

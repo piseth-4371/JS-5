@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body>
+    <div class="w-full h-screen bg-gray-700 flex items-center justify-center flex-wrap">
+        <div class="w-96 py-7 px-10 text-center bg-pink-300">
+            <nav class="flex justify-between mb-8">
+                <div class="rounded-[50%] w-12 h-12 leading-12 bg-white text-pink-400 shadow-[0_5px_10px_rgba(255,26,26,0.22)]">
+                   <i class="fa-solid fa-angle-left"></i>
+                </div>
+                 <div class="rounded-[50%] w-12 h-12 leading-12 bg-white text-pink-400 shadow-[0_5px_10px_rgba(255,26,26,0.22)]">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="media/dog.jpg" alt="" class="w-56 h-56 rounded-[50%] border-8 border-white shadow-[0_5px_10px_rgba(255,26,26,0.22)] mx-auto">
+            <h1 class="text-xl font-normal text-[#333] mt-2.5">Young Love</h1>
+            <p class="text-sm text-[#333]">Young Goat</p>
+
+            <audio id="song">
+                <source src="media/Young Love.mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress" class="appearance-none w-full h-1.5 bg-pink-500  cursor-pointer rounded-sm my-10 ">
+            <div class="flex justify-center items-center">
+                <div class="icon">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div class="icon play" onclick="playPause()">
+                    <i class="fa-solid fa-play" id="ctrlIcon"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/307b38656c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
