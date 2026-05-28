@@ -1,5 +1,6 @@
 @import "tailwindcss";   
 
+
 .error{
     animation: shank 0.2s linear 10;
     border-color: red ;
@@ -69,5 +70,12 @@
     }
     .play:nth-child(2){
         @apply scale-[1.2] bg-[#f53192] text-white;
+    }
+}
+
+/* calculator */
+@layer components{
+    .styleBtn{
+        @apply bg-gray-700 shadow shadow-gray-500 w-full h-14 text-center text-lg font-bold hover:bg-gray-500;
     }
 }
