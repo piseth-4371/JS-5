@@ -79,3 +79,30 @@
         @apply bg-gray-700 shadow shadow-gray-500 w-full h-14 text-center text-lg font-bold hover:bg-gray-500;
     }
 }
+
+/* Dark  theme */
+@layer components{
+    .iconLink{
+        @apply text-[30px] text-[var(--secondary-color)] mr-5 hover:text-[#ff4331];
+    }
+    .navLink{
+        @apply inline-block list-none my-2.5 mx-5;
+    }
+    .navLink a{
+        @apply no-underline text-[var(--secondary-color)] uppercase text-lg hover:text-[#ff4321];
+    }
+    .imgPro{
+        @apply h-full absolute left-1/2 bottom-0 -translate-x-1/2;
+    }
+}
+
+@layer base {
+  :root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+  }
+  .dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff; 
+  }
+}
