@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Popup Message</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body class="bg-pink-300">
+    <div class="flex flex-col items-center justify-evenly mt-52 relative">
+        <button class="w-56 h-16 rounded-2xl bg-amber-100 text-gray-700 text-2xl shadow shadow-amber-300 font-bold uppercase mt-52 hover:bg-amber-100/50 hover:shadow-amber-300/50 hover:text-black" onclick="openPopup()">Submit</button>
+        <div class="bg-white shadow shadow-amber-100 rounded-2xl w-full max-w-sm h-auto flex flex-col items-center justify-evenly text-center p-5 absolute top-0 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-[0.1] transition-[transform_0.4s,top_0.4s] invisible" id="popup">
+            <h1 class="text-3xl font-bold my-5">Thank You!</h1>
+            <p class="text-lg my-2"> 
+                Your details has been successfully <br>
+                sumbbitted. Thanks!
+            </p>
+            <button class="w-full h-10 bg-green-400 rounded-xl shadow shadow-amber-100 text-white font-medium text-lg uppercase my-5 hover:bg-green-400/70" onclick="closePopup()">ok</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
